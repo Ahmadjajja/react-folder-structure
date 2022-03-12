@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import Header from "./commonComponents/header"
 import './App.css';
-
+import {LandingPage} from "./modules/landing page/index"
+// import {useState} from "react";
+// import "bootstrap/css/bootstrap.min.css";   //confused here how this bootstrap added
+// import "materialize/css/materialize.min.css";
+import "bootstrap";
+import "materialize-css"
+//if import does not contain relative path syntax it will auto find the folder from the node modules
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header />
+        <LandingPage/>
     </div>
   );
 }
